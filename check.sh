@@ -19,8 +19,5 @@ redbull=`curl --silent https://www.formula1.com/content/dam/fom-website/teams/20
 aston=`curl --silent https://www.formula1.com/content/dam/fom-website/teams/2023/aston-martin.png | sha1sum | awk '{print $1}'`
 [ $aston != "501bb7953c975481c88392a643b4d9ef99311b0e" ] && echo "Aston martin ready!"
 
-alpha=`curl --silent https://www.formula1.com/content/dam/fom-website/teams/2023/alphatauri.png | sha1sum | awk '{print $1}'`
-[ $alpha != "b9f5cb579324970020bc041c483b88e76c3be0d4" ] && echo "Alpha tauri ready!"
-
 williams=`curl --silent https://www.formula1.com/content/dam/fom-website/teams/2023/williams.png | sha1sum | awk '{print $1}'`
 [ $williams != "13655df07f13ff5abb6a39c3a75a87e1750113a5" ] && echo "Williams ready!"
