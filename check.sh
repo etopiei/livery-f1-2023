@@ -10,14 +10,8 @@ ferrari=`curl --silent https://www.formula1.com/content/dam/fom-website/teams/20
 haas=`curl --silent https://www.formula1.com/content/dam/fom-website/teams/2023/haas-f1-team.png | sha1sum | awk '{print $1}'`
 [ $haas != "f53022723e2a1178a8ad23abb29e2e671ec0091d" ] && echo "Haas ready!"
 
-mclaren=`curl --silent https://www.formula1.com/content/dam/fom-website/teams/2023/mclaren.png | sha1sum | awk '{print $1}'`
-[ $mclaren != "45376f311d4d83b8ce7813e2c1481a9cfd74b125" ] && echo "Mclaren ready!"
-
 redbull=`curl --silent https://www.formula1.com/content/dam/fom-website/teams/2023/red-bull-racing.png | sha1sum | awk '{print $1}'`
 [ $redbull != "2e014bcf8fb8c47619f5777e583ea55d229114ce" ] && echo "Red bull ready!"
-
-aston=`curl --silent https://www.formula1.com/content/dam/fom-website/teams/2023/aston-martin.png | sha1sum | awk '{print $1}'`
-[ $aston != "501bb7953c975481c88392a643b4d9ef99311b0e" ] && echo "Aston martin ready!"
 
 williams=`curl --silent https://www.formula1.com/content/dam/fom-website/teams/2023/williams.png | sha1sum | awk '{print $1}'`
 [ $williams != "13655df07f13ff5abb6a39c3a75a87e1750113a5" ] && echo "Williams ready!"
