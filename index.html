@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script defer src="https://unpkg.com/img-comparison-slider@7/dist/index.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/img-comparison-slider@7/dist/styles.css" />
 </head>
@@ -55,6 +56,13 @@
 </html>
 
 <style>
+    @font-face {
+        font-family: "F1";
+        src: url(font/f1.otf) format("truetype");
+    }
+    * {
+        font-family: F1, Verdana, Geneva, Tahoma, sans-serif;
+    }
     body {
         margin: 0;
         background-color: #151515;
@@ -66,7 +74,7 @@
     }
     
     img-comparison-slider {
-        min-width: 600px;
-        width: 50%;
+        max-width: 600px;
+        width: 100%;
     }
 </style>
